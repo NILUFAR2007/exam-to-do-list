@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(113, 2, 123);
+  color: white;
+  height: 100vh;
+}
+
+.title {
+  font-size: 1.5rem;
+}
+
+.title,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  padding-left: 1rem;
+  font-size: 1.8rem;
+  border: none;
+  background: white;
+  border-radius: 2rem;
+}
+
+form button {
+  color: rgb(207, 46, 221);
+  background: white;
+  cursor: pointer;
+  transition: all 0.3 ease;
+  margin-left: 0.5rem;
+}
+
+form button:hover {
+  color: white;
+  background: rgb(207, 46, 221);
+}
+
+.fa-plus-circle {
+  margin-top: 0.3rem;
+  margin-left: -8px;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  padding-left: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 2rem;
+}
+
+.plus{
+    font-size: 30px;
+}
+
+ .trash-btn,
+.complete-btn {
+  color: #fff;
+  border: none;
+  padding: 1rem;
+} 
+
+.complete-btn {
+  background:rgb(207, 46, 221);
+  margin-left: 200px;
+}
+
+ .trash-btn {
+  border-top-right-radius: 1.75rem;
+  border-bottom-right-radius: 1.75rem;
+  background: rgb(171, 171, 171);
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+  margin-left: 150px;
+}
+
+.fa-check-circle {
+  pointer-events: none;
+} 
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.h2done{
+    background-color: aqua;
+}
+.slide {
+  transform: translateX(50px);
+  opacity: 0;
+}
